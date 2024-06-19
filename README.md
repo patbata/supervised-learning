@@ -66,6 +66,7 @@ unsupervised-learning
           |--student-por.csv
           |--student-merge.R
 |--results/                     - results of the models
+|--results-analysis.pdf         - written report on the analysis of results
 |--main.py                      - main file to run the models
 |--eda.ipynb                    - exploratory data analysis notebook
 |--requirements.txt             - required packages for the project
