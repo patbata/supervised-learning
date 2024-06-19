@@ -1,0 +1,67 @@
+data: student
+scoring: 'balanced_accuracy'
+k_folds: 5
+stratified: True
+# list of models to test
+dt:
+  params:
+    max_depth: 3
+    max_features: 12
+    min_samples_leaf: 2
+    min_samples_split: 4
+    min_weight_fraction_leaf: 0.1
+  hyperparams:
+    max_depth: range(1,10)
+    min_samples_split: np.arange(4,40,4)
+    min_samples_leaf: np.arange(2,20,2)
+    max_features: np.arange(5,15,1)
+    min_weight_fraction_leaf: np.arange(0.1,0.4,0.1)
+nn:
+  params:
+    hidden_layer_sizes: (100, 150)
+    activation: 'relu'
+    solver: 'adam'
+    alpha: 0.001
+    learning_rate_init: 0.01
+  hyperparams:
+    hidden_layer_sizes: np.arange(50,300,50)
+#    depth_hidden_layer: range(1,5)
+    activation: ['tanh', 'relu', 'logistic']
+    solver: ['adam', 'sgd']
+    alpha: [0.0001, 0.001, 0.01, 0.05, 0.1]
+    learning_rate_init: [0.0001, 0.001, 0.01, 0.05, 0.1]
+boost:
+  params:
+    algorithm: 'SAMME'
+    n_estimators: 50
+    learning_rate: 0.5
+    estimator: 'DecisionTree'
+  hyperparams:
+    estimator: ['DecisionTree', 'RandomForest']
+    algorithm: ['SAMME', 'SAMME.R']
+    n_estimators: np.arange(50,210,10)
+    learning_rate: [0.001, 0.05, 0.01, 0.1, 0.5, 1]
+svm:
+  scaler: None
+  params:
+    C: 1
+    gamma: 1
+    kernel: 'linear'
+  hyperparams:
+    C: [ 0.1, 1, 10, 100, 1000 ]
+    gamma: [ 1, 0.1, 0.01, 0.001, 0.0001 ]
+    kernel: ['rbf', 'linear', 'poly']
+knn:
+  params:
+    n_neighbors: 6
+    weights: 'distance'
+    algorithm: 'kd_tree'
+    leaf_size: 16
+    p: 1
+  hyperparams:
+    n_neighbors: np.arange(1,10,1)
+    weights: ['uniform', 'distance']
+    algorithm: ['ball_tree', 'kd_tree', 'brute']
+    leaf_size: np.arange(10,40,2)
+    p: np.arange(1,3,1)
+

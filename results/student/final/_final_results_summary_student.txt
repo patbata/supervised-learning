@@ -1,0 +1,239 @@
+-----------------------------------------------------------
+STUDENT FINAL RESULTS
+Validation Method: StratifiedKFold (5 folds)
+Scoring:           balanced_accuracy
+Features:          school_MS, sex_M, address_U, famsize_LE3, Pstatus_T, Mjob_teacher, Fjob_teacher, age, Medu, Fedu, traveltime, studytime, failures, famrel, freetime, goout, Dalc, Walc, health, absences
+-----------------------------------------------------------
+MODEL:             DecisionTree
+Best Parameters:   {'max_depth': 3, 'max_features': 12, 'min_samples_leaf': 2, 'min_samples_split': 4, 'min_weight_fraction_leaf': 0.1}
+fit_time                   0.003300
+score_time                 0.001298
+val_balanced_accuracy      0.147741
+train_balanced_accuracy    0.180436
+test_accuracy              0.178667
+test_weighted_precision    0.073834
+test_weighted_recall       0.178667
+test_weighted_f1           0.095743
+test_balanced_accuracy     0.162198
+-----------------------------------------------------------
+MODEL:             NeuralNetwork
+Best Parameters:   {'hidden_layer_sizes': '(100, 150)', 'activation': 'relu', 'solver': 'adam', 'alpha': 0.001, 'learning_rate_init': 0.01}
+fit_time                   0.253882
+score_time                 0.001186
+val_balanced_accuracy      0.138278
+train_balanced_accuracy    1.000000
+test_accuracy              0.157333
+test_weighted_precision    0.152381
+test_weighted_recall       0.157333
+test_weighted_f1           0.147635
+test_balanced_accuracy     0.134487
+-----------------------------------------------------------
+MODEL:             BoostedDT
+Best Parameters:   {'algorithm': 'SAMME', 'n_estimators': 50, 'learning_rate': 0.5, 'estimator': 'DecisionTree'}
+fit_time                   0.002326
+score_time                 0.000839
+val_balanced_accuracy      0.103254
+train_balanced_accuracy    1.000000
+test_accuracy              0.120000
+test_weighted_precision    0.150308
+test_weighted_recall       0.120000
+test_weighted_f1           0.124882
+test_balanced_accuracy     0.100409
+-----------------------------------------------------------
+MODEL:             SVM
+Best Parameters:   {'C': 1, 'gamma': 1, 'kernel': 'linear'}
+fit_time                   0.018587
+score_time                 0.001287
+val_balanced_accuracy      0.186935
+train_balanced_accuracy    0.559611
+test_accuracy              0.165333
+test_weighted_precision    0.142622
+test_weighted_recall       0.165333
+test_weighted_f1           0.141531
+test_balanced_accuracy     0.142479
+-----------------------------------------------------------
+MODEL:             KNN
+Best Parameters:   {'n_neighbors': 6, 'weights': 'distance', 'algorithm': 'kd_tree', 'leaf_size': 16, 'p': 1}
+fit_time                   0.001314
+score_time                 0.001334
+val_balanced_accuracy      0.154585
+train_balanced_accuracy    1.000000
+test_accuracy              0.112000
+test_weighted_precision    0.098946
+test_weighted_recall       0.112000
+test_weighted_f1           0.096034
+test_balanced_accuracy     0.106758
+-----------------------------------------------------------
+MODEL:             DecisionTree
+Best Parameters:   {'max_depth': 3, 'max_features': 12, 'min_samples_leaf': 2, 'min_samples_split': 4, 'min_weight_fraction_leaf': 0.1}
+fit_time                   0.002132
+score_time                 0.000868
+val_balanced_accuracy      0.137863
+train_balanced_accuracy    0.191385
+test_accuracy              0.165333
+test_weighted_precision    0.067728
+test_weighted_recall       0.165333
+test_weighted_f1           0.090847
+test_balanced_accuracy     0.145055
+-----------------------------------------------------------
+MODEL:             NeuralNetwork
+Best Parameters:   {'hidden_layer_sizes': '(100, 150)', 'activation': 'relu', 'solver': 'adam', 'alpha': 0.001, 'learning_rate_init': 0.01}
+-----------------------------------------------------------
+MODEL:             DecisionTree
+Best Parameters:   {'max_depth': 3, 'max_features': 12, 'min_samples_leaf': 2, 'min_samples_split': 4, 'min_weight_fraction_leaf': 0.1}
+fit_time                   0.001998
+score_time                 0.000872
+val_balanced_accuracy      0.144402
+train_balanced_accuracy    0.186069
+test_accuracy              0.165333
+test_weighted_precision    0.080350
+test_weighted_recall       0.165333
+test_weighted_f1           0.099636
+test_balanced_accuracy     0.144560
+-----------------------------------------------------------
+MODEL:             NeuralNetwork
+Best Parameters:   {'hidden_layer_sizes': '(100, 150)', 'activation': 'relu', 'solver': 'adam', 'alpha': 0.001, 'learning_rate_init': 0.01}
+-----------------------------------------------------------
+MODEL:             DecisionTree
+Best Parameters:   {'max_depth': 3, 'max_features': 12, 'min_samples_leaf': 2, 'min_samples_split': 4, 'min_weight_fraction_leaf': 0.1}
+fit_time                   0.002030
+score_time                 0.000878
+val_balanced_accuracy      0.138858
+train_balanced_accuracy    0.174363
+test_accuracy              0.154667
+test_weighted_precision    0.082036
+test_weighted_recall       0.154667
+test_weighted_f1           0.096872
+test_balanced_accuracy     0.132125
+-----------------------------------------------------------
+MODEL:             NeuralNetwork
+Best Parameters:   {'hidden_layer_sizes': '(100, 150)', 'activation': 'relu', 'solver': 'adam', 'alpha': 0.001, 'learning_rate_init': 0.01}
+fit_time                   0.275565
+score_time                 0.001057
+val_balanced_accuracy      0.138205
+train_balanced_accuracy    1.000000
+test_accuracy              0.146667
+test_weighted_precision    0.159646
+test_weighted_recall       0.146667
+test_weighted_f1           0.142831
+test_balanced_accuracy     0.117827
+-----------------------------------------------------------
+MODEL:             BoostedDT
+Best Parameters:   {'algorithm': 'SAMME', 'n_estimators': 50, 'learning_rate': 0.5, 'estimator': 'DecisionTree'}
+fit_time                   0.002998
+score_time                 0.001123
+val_balanced_accuracy      0.115733
+train_balanced_accuracy    1.000000
+test_accuracy              0.117333
+test_weighted_precision    0.145284
+test_weighted_recall       0.117333
+test_weighted_f1           0.119383
+test_balanced_accuracy     0.111691
+-----------------------------------------------------------
+MODEL:             SVM
+Best Parameters:   {'C': 1, 'gamma': 1, 'kernel': 'linear'}
+fit_time                   0.018733
+score_time                 0.001218
+val_balanced_accuracy      0.186935
+train_balanced_accuracy    0.559611
+test_accuracy              0.165333
+test_weighted_precision    0.142622
+test_weighted_recall       0.165333
+test_weighted_f1           0.141531
+test_balanced_accuracy     0.142479
+-----------------------------------------------------------
+MODEL:             KNN
+Best Parameters:   {'n_neighbors': 6, 'weights': 'distance', 'algorithm': 'kd_tree', 'leaf_size': 16, 'p': 1}
+fit_time                   0.000965
+score_time                 0.001273
+val_balanced_accuracy      0.154585
+train_balanced_accuracy    1.000000
+test_accuracy              0.112000
+test_weighted_precision    0.098946
+test_weighted_recall       0.112000
+test_weighted_f1           0.096034
+test_balanced_accuracy     0.106758
+-----------------------------------------------------------
+MODEL:             DecisionTree
+Best Parameters:   {'max_depth': 3, 'max_features': 12, 'min_samples_leaf': 2, 'min_samples_split': 4, 'min_weight_fraction_leaf': 0.1}
+fit_time                   0.005329
+score_time                 0.001332
+val_balanced_accuracy      0.115812
+train_balanced_accuracy    0.196295
+test_accuracy              0.178667
+test_weighted_precision    0.074594
+test_weighted_recall       0.178667
+test_weighted_f1           0.099853
+test_balanced_accuracy     0.154396
+-----------------------------------------------------------
+MODEL:             NeuralNetwork
+Best Parameters:   {'hidden_layer_sizes': '(100, 150)', 'activation': 'relu', 'solver': 'adam', 'alpha': 0.001, 'learning_rate_init': 0.01}
+fit_time                   0.255951
+score_time                 0.001132
+val_balanced_accuracy      0.129463
+train_balanced_accuracy    1.000000
+test_accuracy              0.141333
+test_weighted_precision    0.157488
+test_weighted_recall       0.141333
+test_weighted_f1           0.139691
+test_balanced_accuracy     0.117051
+-----------------------------------------------------------
+MODEL:             BoostedDT
+Best Parameters:   {'algorithm': 'SAMME', 'n_estimators': 50, 'learning_rate': 0.5, 'estimator': 'DecisionTree'}
+fit_time                   0.002406
+score_time                 0.000856
+val_balanced_accuracy      0.104389
+train_balanced_accuracy    1.000000
+test_accuracy              0.125333
+test_weighted_precision    0.157678
+test_weighted_recall       0.125333
+test_weighted_f1           0.127739
+test_balanced_accuracy     0.125965
+-----------------------------------------------------------
+MODEL:             SVM
+Best Parameters:   {'C': 1, 'gamma': 1, 'kernel': 'linear'}
+fit_time                   0.018361
+score_time                 0.001316
+val_balanced_accuracy      0.186935
+train_balanced_accuracy    0.559611
+test_accuracy              0.165333
+test_weighted_precision    0.142622
+test_weighted_recall       0.165333
+test_weighted_f1           0.141531
+test_balanced_accuracy     0.142479
+-----------------------------------------------------------
+MODEL:             KNN
+Best Parameters:   {'n_neighbors': 6, 'weights': 'distance', 'algorithm': 'kd_tree', 'leaf_size': 16, 'p': 1}
+fit_time                   0.001377
+score_time                 0.001587
+val_balanced_accuracy      0.154585
+train_balanced_accuracy    1.000000
+test_accuracy              0.112000
+test_weighted_precision    0.098946
+test_weighted_recall       0.112000
+test_weighted_f1           0.096034
+test_balanced_accuracy     0.106758
+-----------------------------------------------------------
+MODEL:             NeuralNetwork
+Best Parameters:   {'hidden_layer_sizes': '(100, 150)', 'activation': 'relu', 'solver': 'adam', 'alpha': 0.001, 'learning_rate_init': 0.01}
+fit_time                   0.243566
+score_time                 0.001420
+val_balanced_accuracy      0.140159
+train_balanced_accuracy    1.000000
+test_accuracy              0.160000
+test_weighted_precision    0.161443
+test_weighted_recall       0.160000
+test_weighted_f1           0.149844
+test_balanced_accuracy     0.132094
+-----------------------------------------------------------
+MODEL:             NeuralNetwork
+Best Parameters:   {'hidden_layer_sizes': '(100, 150)', 'activation': 'relu', 'solver': 'adam', 'alpha': 0.001, 'learning_rate_init': 0.01}
+fit_time                   0.238854
+score_time                 0.001155
+val_balanced_accuracy      0.124072
+train_balanced_accuracy    1.000000
+test_accuracy              0.152000
+test_weighted_precision    0.164495
+test_weighted_recall       0.152000
+test_weighted_f1           0.146747
+test_balanced_accuracy     0.130379
